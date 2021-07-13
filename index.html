@@ -12,8 +12,148 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>fcTen Portfolio</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- NavBar -->
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#">Fernando Carvalho</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Skills <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <!-- Main Name -->
+    <div class="type_wrapper bg-transparent">
+        <div class="typewriter">
+            <h1>Full Stack Web Developer</h1>
+        </div>
+    </div>
+    <!-- Skills -->
+    <div class="container skills">
+        <div class=row>
+            <div class="col-md-6">
+                <div>
+                    <h2>skill</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <h2>skill</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <h2>skill</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <h2>skill</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide Carrousel -->
+    <div class="container slide_carrousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/388x259/jack-zhang-7u6ZXw33T6k-unsplash_MUJI.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/388x259/compare-fibre-f-vGWVSjl3s-unsplash_AIRBNB.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/388x259/juliana-lee-HTxGHOd5j1g-unsplash_JEJU.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/388x259/frank-mckenna-JB92NeJSxW4-unsplash_USA_SPORT.jpg" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+   <div class="container portfolio_main">
+    <div class=row>
+        <div class="col-md-6">
+            <div>
+                <h2>job</h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h2>job</h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h2>job</h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h2>job</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Summary -->
+    <div class="container summary_main">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/388x259/dragos-gontariu-E9UVjNNmYS8-unsplash_CITIES.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">LinkedIn</a>
+              <a href="#" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
+    </div>
+
+   
+
+
     <!-- JavaScript, you need this for the drop down buttons to work -->
     <!-- jQuery first, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
