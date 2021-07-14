@@ -22,6 +22,17 @@
 }
 /*               End of Setup             */
 
+.container {
+  max-width: 1760px;
+  width: 100%;
+  
+  padding-right: 80px;
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+
+
+
 /* Navbar */
 
 .navbar {
@@ -33,16 +44,26 @@
   border-bottom: 3px solid orange;
 }
 
+/* Body */
+
+body {
+  diplay: block;
+  font-family: monospace;
+}
+
+
 /* Skills */
 
 .skill_box {
   border: 3px solid black;
 }
 
-body {
-    diplay: block;
-    font-family: monospace;
+.tech_icon {
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding: 20px;
 }
+
 
 h1 {
     color: black;
@@ -70,6 +91,8 @@ h1 {
     blink-caret .5s step-end infinite;
 }
 
+
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -86,22 +109,39 @@ h1 {
 
 .parallax {
   /* Set a specific height */
-  min-height: 300px; 
+  width: 100vw;
+  min-height: 500px; 
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment:scroll;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .parallax_1 {
   /* The image used */
-  background-image: url("./images/patrick-hendry-Rrbh6X35f0w-unsplash.jpg");
-  
+  background-image: url("./images/the-phope-9X1rJClbnmg-unsplash.jpg");  
+}
+
+@media (max-width: 767px) {
+  .parallax_1 {
+    background-position: left;
+    background-size:contain;
+  }
 }
 
 .parallax_2 {
-  background-image: url("./images/the-phope-9X1rJClbnmg-unsplash.jpg");
-  background-position: bottom; 
+  background-image: url("./images/ben-kolde-UTMq3x6TvaI-unsplash.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  position:relative;
+   
 }
+.summary_main {
+  position:absolute;
+  margin-bottom: 0;
+  margin-right: auto;
+  color: black;
+}
+
