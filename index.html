@@ -15,21 +15,18 @@
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- NavBar -->
     <header>
-        <nav class="container navbar fixed-top navbar-expand-sm navbar-light bg-light">
-            <a class="navbar-brand" href="#">Fernando Carvalho</a>
+        <nav class="container navbar fixed-top navbar-expand-sm navbar-light bg-white">
+            <a class="navbar-brand" href="#professional">Fernando Carvalho</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Skills<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
               </ul>
             </div>
@@ -38,17 +35,20 @@
 
 
     <!-- Main Developer Name -->
-    <div class="container parallax parallax_1">
+    <div class="container parallax parallax_1" id="professional">
         <div class="type_wrapper bg-transparent">
             <div class="typewriter mt-5">
                 <h1>Full Stack Web Developer</h1>
+            </div>
+            <div class="sm_typewriter">
+                <p>Full Stack<br>Web Developer</p>
             </div>
         </div>
     </div>
     
     <!-- Skills -->
    
-    <div class="container skills">
+    <div class="container skills" id="techs">
         <div class=row>
             <div class="skill_box col-md-6">
                 <div>
@@ -67,27 +67,83 @@
         </div>
     </div>
 
-    <div class="container portfolio_main">
-        <h1>Portfolio</h1>
+    <div class="container portfolio_main" id="portfolio">
+        <h1 id="H1_Portifolio">Portfolio</h1>
         <div class=row>
-            <div class="col-md-6">
-                <div>
-                    <h2>job</h2>
+            <div class="col-md-6 job_box">
+                <div class="flex-container job-item my-3">
+                    <div class="job-img">
+                        <img src="https://via.placeholder.com/350" class="image-responsive">
+                    </div>
+                    <div class="flex-text cat-text pl-2">
+                        <div class="date">
+                            <p>Date / Period</p>
+                        </div>
+                        <div class="sub-heading">
+                            <p>
+                                <a href=#>
+                                    Webapp / Website summary purpose/description.
+                                </a>
+                            </p>
+                        </div>   
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div>
-                    <h2>job</h2>
+            <div class="col-md-6 job_box">
+                <div class="flex-container job-item my-3">
+                    <div class="job-img">
+                      <img src="https://via.placeholder.com/350" class="image-responsive">
+                    </div>
+                    <div class="flex-text cat-text pl-2">
+                      <div class="date">
+                        <p>Date / Period</p>
+                      </div>
+                      <div class="sub-heading">
+                        <p>
+                          <a href=#>
+                            Webapp / Website summary purpose/description.
+                          </a>
+                        </p>
+                      </div>   
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div>
-                    <h2>job</h2>
+            <div class="col-md-6 job_box">
+                <div class="flex-container job-item my-3">
+                    <div class="job-img">
+                      <img src="https://via.placeholder.com/350" class="image-responsive">
+                    </div>
+                    <div class="flex-text cat-text pl-2">
+                      <div class="date">
+                        <p>Date / Period</p>
+                      </div>
+                      <div class="sub-heading">
+                        <p>
+                          <a href=#>
+                            Webapp / Website summary purpose/description.
+                          </a>
+                        </p>
+                      </div>   
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div>
-                    <h2>job</h2>
+            <div class="col-md-6 job_box">
+                <div class="flex-container job-item my-3">
+                    <div class="job-img">
+                      <img src="https://via.placeholder.com/350" class="image-responsive">
+                    </div>
+                    <div class="flex-text cat-text pl-2">
+                      <div class="date">
+                        <p>Date / Period</p>
+                      </div>
+                      <div class="sub-heading">
+                        <p>
+                          <a href=#>
+                            Webapp / Website summary purpose/description.
+                          </a>
+                        </p>
+                      </div>   
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,15 +154,21 @@
 
     <div class="container parallax parallax_2">
         <div class="summary_main">
-            <h1>About</h1>
-            <p>Freelance Full Stack Web Developer and entrepeneur on code projects related to operations management, interactive training and game design.</p>
-        </div>    
+            <h1 id="about">About</h1>
+            <p>I'm a (future)Freelance Full Stack Web Developer and (future)entrepeneur with interest in developing apps related to business operations, risk management and interactive training. <span id="summary_2nd_text">I'm into integrating things with technology in order to help people perform better on the spot, using web-mobile apps to enhance their decison making, risk management and learning proccesses.</span></p>
+            <div class="me_box">
+                <p>You can contact me on: 
+                    <button type="button" class="btn btn-dark" id="social_btn"><a href=""><i class="fab fa-github"></i>GitHub</a></button>
+                    <button type="button" class="btn btn-dark" id="social_btn"><a href=""><i class="fab fa-linkedin">LinkedIn</a></i></button>
+                </p>
+                <img src="./images/fernando_photo.jpg">
+            </div>  
+        </div>
+                  
     </div>
-    <!-- Slide Carrousel -->
     
-    <!-- Portfolio -->
+    
    
-    <!-- Summary -->
 
     
 

@@ -23,7 +23,7 @@
 /*               End of Setup             */
 
 .container {
-  max-width: 1760px;
+  max-width: 1200 px;
   width: 100%;
   
   padding-right: 80px;
@@ -39,6 +39,10 @@
   font-family: monospace;
 }
 
+.navbar > .navbar-collapse > .navbar-nav > li > a {
+  transition: color .3s linear;
+}
+
 .navbar > .navbar-collapse > .navbar-nav > li > a:hover {
   color: orange;
   border-bottom: 3px solid orange;
@@ -52,27 +56,19 @@ body {
 }
 
 
-/* Skills */
-
-.skill_box {
-  border: 3px solid black;
-}
-
-.tech_icon {
-  text-align: center;
-  border-bottom: 3px solid black;
-  padding: 20px;
-}
-
-
 h1 {
     color: black;
 }
 
+.sm_typewriter {
+  font-size: 24px;
+}
+
+/* Typewriting Effect */
 /* GLOBAL STYLES */
 .type_wrapper {
   /* background: #333; */
-  padding-top: 5em;
+  padding-top: 360px;
   display: flex;
   justify-content: center;
 }
@@ -91,7 +87,23 @@ h1 {
     blink-caret .5s step-end infinite;
 }
 
+@media (max-width: 480px) {
+  .typewriter {
+    display: none;
+  }
+}
 
+@media (min-width:479px) {
+  .sm_typewriter {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .typewriter h1 {
+    font-size: 24px;
+  }
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -105,12 +117,57 @@ h1 {
   50% { border-color: orange }
 }
 
+/* Skills */
+
+.skill_box {
+  border: 3px solid black;
+}
+
+.tech_icon {
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding: 20px;
+}
+
+/* Portfolio */
+
+#H1_Portifolio {
+  margin-bottom: 32px;
+}
+
+.image-responsive {
+  width: 100%;
+}
+
+.job_box {
+  border: 3px solid black;
+  transition: all .3s linear;
+}
+
+
+
+.sub-heading > p > a {
+  color: black;
+  text-decoration: none;
+  transition: color .3s linear;
+}
+
+.sub-heading > p > a:hover {
+  color: orange; 
+}
+
+@media (max-width: 767.98px) {
+  .sub-heading > p > a {
+    font-size: 12px;
+  }
+}
+
 /* Magic Scroll */
 
 .parallax {
   /* Set a specific height */
   width: 100vw;
-  min-height: 500px; 
+  min-height: 600px; 
 
   /* Create the parallax scrolling effect */
   background-attachment:scroll;
@@ -121,27 +178,59 @@ h1 {
 
 .parallax_1 {
   /* The image used */
-  background-image: url("./images/the-phope-9X1rJClbnmg-unsplash.jpg");  
+  background-image: url("./images/patrick-hendry-Rrbh6X35f0w-unsplash.jpg");  
 }
 
 @media (max-width: 767px) {
   .parallax_1 {
-    background-position: left;
+    background-position: right;
     background-size:contain;
   }
 }
 
 .parallax_2 {
-  background-image: url("./images/ben-kolde-UTMq3x6TvaI-unsplash.jpg");
+  background-image: url("./images/isaac-benhesed-onLbXleIkds-unsplash_COFFE.jpg");
   background-position: center;
   background-attachment: fixed;
   position:relative;
-   
+  margin-bottom: 0;
 }
 .summary_main {
   position:absolute;
   margin-bottom: 0;
-  margin-right: auto;
-  color: black;
+  margin-right: 80px;
+  color:rgb(83, 79, 79);
+}
+@media (max-width: 767.98px) {
+  #summary_2nd_text {
+    display:none;
+  }
 }
 
+
+#social_btn {
+  font-size:24px;
+  margin-bottom: 5px;
+}
+
+#social_btn > a {
+  color: white;
+  text-decoration: none;
+  transition: color .3s linear;
+}
+
+#social_btn > a:hover {
+  color: orange;
+}
+
+@media (max-width:767.98px) {
+  h1 {
+    font-size: 32px;
+  }
+  .summary_main {
+    font-size: 12px;
+  }
+  #social_btn {
+    font-size: 16px;
+  }
+}
