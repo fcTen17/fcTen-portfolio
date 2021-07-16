@@ -189,24 +189,24 @@ h1 {
 }
 
 .parallax_2 {
-  background-image: url("./images/isaac-benhesed-onLbXleIkds-unsplash_COFFE.jpg");
+  background-image: url("./images/isaac-benhesed-onLbXleIkds-unsplash_COFFE_resized.jpg");
   background-position: center;
   background-attachment: fixed;
   position:relative;
-  margin-bottom: 0;
+  margin-bottom: 0;  
 }
+
 .summary_main {
   position:absolute;
   margin-bottom: 0;
   margin-right: 80px;
   color:rgb(83, 79, 79);
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) { 
   #summary_2nd_text {
-    display:none;
+    display:none;  
   }
 }
-
 
 #social_btn {
   font-size:24px;
